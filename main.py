@@ -78,7 +78,7 @@ def test_relays(delay_time):
     #open device
     relay_device.open_relay_device()
     for i in range(8):
-        assert (relay_device.open_one_relay_channel(i)) == 1, "error opening relay channel number " + str(i) + ""
+        assert (relay_device.open_one_relay_channel(i)) == 0, "error opening relay channel number " + str(i) + ""
         print("relay channel number " + str(i) + " opened")
         time.sleep(delay_time)
     #close all device channels
