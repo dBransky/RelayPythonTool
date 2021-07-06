@@ -59,6 +59,3 @@ def test_relays(delay_time):
         assert open_one_relay_channel(i) == 0, "error opening relay channel number " + str(i) + ""
         print("relay channel number " + str(i) + " opened")
         time.sleep(delay_time)
-
-
-test_relays(0.05)
